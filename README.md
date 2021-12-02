@@ -16,6 +16,15 @@ Buildy is a website builder that has been built off of Node.js and Express, I ai
 
 Due to my using of yarn, just [install yarn](https://classic.yarnpkg.com/en/docs/install) and run the command `yarn` to install all dependencies
 
+## Dependencies
+
+As mentioned in my `package.json`, the dependencies are:
+
+`dotenv` Secret information :shushing_face:\
+`ejs` Templating engine for the website's interface\
+`ejs-lint` More descriptive EJS errors\
+`express` Web server
+
 ## License
 
 <a href="https://creativecommons.org/publicdomain/zero/1.0/">
