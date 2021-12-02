@@ -25,7 +25,10 @@ As mentioned in my `package.json`, the dependencies are:
 `dotenv` Secret information :shushing_face:\
 `ejs` Templating engine for the website's interface\
 `ejs-lint` More descriptive EJS errors\
-`express` Creating and handling the webserver
+`express` Creating and handling the webserver\
+`mongoose` Database for accounts and projects, etc.\
+`passport` Accounts registration and such\
+`passport-google-oauth` Making it easier for everyone to login/register
 
 ## License
 
