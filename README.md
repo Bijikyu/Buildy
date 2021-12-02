@@ -23,7 +23,7 @@ As mentioned in my `package.json`, the dependencies are:
 `dotenv` Secret information :shushing_face:\
 `ejs` Templating engine for the website's interface\
 `ejs-lint` More descriptive EJS errors\
-`express` Web server
+`express` Creating and handling the webserver
 
 ## License
 
