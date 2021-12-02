@@ -12,6 +12,8 @@
 
 Buildy is a website builder that has been built off of Node.js and Express, I aim to make Buildy as fast as possible - therefore, it uses EJS and JavaScript ES6, as (in my personal experience), EJS seems to load everything much faster. I have considered React, though I do not know much of it - so I will be playing it safe. As for ES6, I think that's pretty obvious why I'm using that instead of common JavaScript.
 
+**Also, remember to [join our Discord](https://discord.gg/YVNHbzy9vj).**
+
 ## Initialization
 
 Due to my using of yarn, just [install yarn](https://classic.yarnpkg.com/en/docs/install) and run the command `yarn` to install all dependencies
