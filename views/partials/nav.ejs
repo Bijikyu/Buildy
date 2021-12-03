@@ -1,42 +1,73 @@
-<nav class="navbar navbar-expand-sm navbar-dark p-3" style="background: rgb(25, 25, 25);">
-    <a class="navbar-brand me-2" href="#">
-        <img src="/images/Buildy.png" alt="Logo" width=50>
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/images/Buildy.png" width="30" class="me-2" />
+      <span class="ms-3 fw-light">Buildy</span>
     </a>
 
     <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navigator"
+      class="navbar-toggler border-0 shadow-none"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbar"
     >
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navigator">
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto ps-lg-4">
+        <li class="nav-item px-lg-2">
+          <a class="nav-link" href="/">
+            <span class="d-inline-block d-lg-none icon-width">
+            <i class="fas fa-home"></i></span>
+            Home
+          </a>
+        </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">Discord</a>
-            </li>
+        <li class="nav-item px-lg-2 dropdown d-menu">
+          <a
+            class="nav-link dropdown-toggle"
+            href="/"
+            id="dropdown01"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+            ><span class="d-inline-block d-lg-none icon-width">
+              <i class="fas fa-user"></i
+            ></span>
+            Account
+          </a>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                    Account
-                </a>
+          <div
+            class="dropdown-menu shadow-sm sm-menu animate slideIn"
+            aria-labelledby="dropdown01"
+          >
+            <% if(user) { %>
+                <a class="dropdown-item" href="/users/user.id">Profile</a>
+                <a class="dropdown-item" href="/dashboard">Dashboard</a>
+            <% } else { %>
+                <a class="dropdown-item" href="/login">Login</a>
+            <% } %>
+          </div>
+        </li>
 
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Dashboard</a></li>
-                    <li><a class="dropdown-item" href="#">Websites</a></li>
-                </ul>
-            </li>
-        </ul>
-      </div>
+        <li class="nav-item px-lg-2">
+            <a class="nav-link" href="/websites">
+              <span class="d-inline-block d-lg-none icon-width">
+              <i class="fas fa-code"></i></span>
+              Websites
+            </a>
+          </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto mt-3 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/">
+            <i class="fab fa-discord"></i>
+            <span class="d-lg-none ms-3">Discord</span>
+          </a>
+        </li>
+      </ul>
     </div>
+  </div>
 </nav>
-
-<p class="bg-primary text-center text-white">
-    This is a development build, bugs are expected.
-</p>

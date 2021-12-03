@@ -8,11 +8,11 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('index', { user: req.user });
 });
 
-app.get('/pagebuilder', (req, res) => {
-    res.render('pagebuilder');
+app.get('/dashboard', (req, res) => {
+    res.render('dashboard', { user: req.user });
 });
 
 app.listen(process.env.PORT, () =>
